@@ -16,9 +16,9 @@ html
     - ext = ext[ext.length - 1];
     - ext = ext.split('.');
     main#display
-      .name #{file.originalname.split('.')[0]}
-      .encoding #{file.encoding}
-      .filetype #{ext}
+      .name Name: #{file.originalname.split('.')[0]}
+      .encoding Encoding: #{file.encoding}
+      .filetype File Type: #{ext}
         i#file(data-id=ext[ext.length - 1])
-      .size #{file.size} bytes
+      .size Size: #{file.size} bytes
     script(type='text/javascript', src='/client.js')
